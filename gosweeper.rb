@@ -5,20 +5,20 @@
 class Gosweeper < Formula
   desc "Play minesweeper in your terminal"
   homepage "https://github.com/dferramosi/gosweeper"
-  version "0.0.0"
+  version "0.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.0/gosweeper_0.0.0_darwin_amd64.tar.gz"
-      sha256 "19ba194edae71ecc1cb15ee7217d1b3c7bd7d82ce715f9dd55b4773eb6a9227c"
+      url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.1/gosweeper_0.0.1_darwin_amd64.tar.gz"
+      sha256 "a9848a7e66fd315a07ec8a82e6fdc6704c22dfb073a710ec2a0cd4ada265ef3c"
 
       def install
         bin.install "gosweeper" => "gosweeper"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.0/gosweeper_0.0.0_darwin_arm64.tar.gz"
-      sha256 "a80b50fa7493110bdae24507421ce3c99410035307e242314dde3a8f4d473a47"
+      url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.1/gosweeper_0.0.1_darwin_arm64.tar.gz"
+      sha256 "47372ec5b3c6a83447540b13cbbb8d72dc51e1fce2658558d24449b57011500c"
 
       def install
         bin.install "gosweeper" => "gosweeper"
@@ -29,8 +29,8 @@ class Gosweeper < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.0/gosweeper_0.0.0_linux_amd64.tar.gz"
-        sha256 "3136bf572d5e2b79dd60db0dc41f1d0f1e846076c668362b092da1c456e66fca"
+        url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.1/gosweeper_0.0.1_linux_amd64.tar.gz"
+        sha256 "b4053bf251f203bf1615414a4e68c21f68135f1080c297996fca8c722d8ad54d"
 
         def install
           bin.install "gosweeper" => "gosweeper"
@@ -39,8 +39,8 @@ class Gosweeper < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.0/gosweeper_0.0.0_linux_arm64.tar.gz"
-        sha256 "10b61f0622d4ddab11d2a960811f00f3174312b26a21730c5925e8b3686a4ff9"
+        url "https://github.com/dferramosi/gosweeper/releases/download/v0.0.1/gosweeper_0.0.1_linux_arm64.tar.gz"
+        sha256 "51d90c3145cf89ec18f2496712166c6afd667e699a6a7aceffcfac73dce42d74"
 
         def install
           bin.install "gosweeper" => "gosweeper"
